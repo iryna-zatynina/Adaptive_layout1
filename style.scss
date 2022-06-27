@@ -1,0 +1,185 @@
+body {
+    color: #181818;
+    margin: 0;
+    background-color: #9789f9;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+
+.cards {
+    margin: 100px 0;
+}
+
+
+.card {
+    background: url("images/bg.png") center no-repeat;
+    background-size: cover;
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+        flex: 0 1 330px;
+    }
+
+    
+        
+		&__price {
+            font-family: bebas-neue-by-fontfabric, sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            line-height: 36px;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 40px 0 24px 0;
+		}
+
+
+
+		&__dollar {
+            font-size: 24px;
+            vertical-align: text-top;
+		}
+
+		&__hour {
+            font-family: bebas-neue-by-fontfabric, sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 300;
+		}
+
+		&__title {
+            font-family: bebas-neue-by-fontfabric, sans-serif;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin: 0 0 66px 0;
+		}
+
+		&__logo {
+            margin-bottom: 30px;
+		}
+
+		&__list {
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 53px;
+            font-weight: 300;
+            list-style: none;
+            margin: 0 auto 90px auto;
+            padding: 0;
+            text-align: start;
+            min-width: 170px;
+        }
+
+		&__btn {
+            font-family: bebas-neue-by-fontfabric, sans-serif;
+            font-style: normal;
+            width: 203px;
+            height: 54px;
+            font-size: 18px;
+            line-height: 53px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: #ffffff;
+            background-color: #6fcffb;
+            box-shadow: 2px 4px 18px 0px rgba(133,192,247,0.31);
+            border-radius: 27px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: -30px;
+            left:auto;
+		}
+
+}
+.big-card_btn {
+    background-color: #fd8d7b;
+    position: unset;
+    margin: 0 auto;
+}
+.big-card_price {
+    margin-top: 50px; 
+}
+
+.big-card_title {
+    margin: 0 0 76px 0;
+}
+
+.big-card_logo {
+    margin-bottom: 36px;
+}
+
+.big-card_list {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+
+.big-card {
+    flex: 0 1 370px;
+}
+.popular {
+    position: absolute;
+    right: -88px;
+    top: 5px;
+    z-index: 10;
+
+}
+.offer {
+    font-family: Roboto;
+    font-size: 11px;
+    line-height: 53px;
+    font-weight: 300;
+    color: #a9a9a9;
+    margin: 0;
+    
+}
+
+@media (max-width: 1023px) {
+    .cards {
+        margin: 20px 0;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .card:nth-child(1) {
+        order: 2;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(3) {
+        margin-top: 50px;
+    }
+
+    .card {
+        margin: 10px;
+        min-width: 310px;
+        width: 50%;
+    }
+
+    .card__btn {
+        font-size: 24px;
+        width: 300px;
+        height: 80px;
+    }
+
+    
+}
